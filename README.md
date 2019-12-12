@@ -9,6 +9,7 @@ This framework provides some baseclasses to handle responsive design including L
 
 ## Pod Consumption
 
+
 - Copy the example `Podfile` from this repo to your project root folder
 - Replace `<YourProjectName>` with your project name
 - Do `pod install`
