@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'SwipeViewFramework'
     s.platform = :ios, '13.0'
-    s.version = '1.0.0'
+    s.version = '1.0.1'
     s.source = { :git => 'https://github.com/vijayvepa/SwipeViewFramework.git', :tag => s.version }
     s.authors = 'Vijay Vepakomma'
     s.license = 'MIT'
