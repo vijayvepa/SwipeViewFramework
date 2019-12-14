@@ -5,7 +5,7 @@
 
 import UIKit
 
-class Constraints {
+open class Constraints {
     var topConstraint: NSLayoutConstraint? = nil
     var bottomConstraint: NSLayoutConstraint? = nil
 

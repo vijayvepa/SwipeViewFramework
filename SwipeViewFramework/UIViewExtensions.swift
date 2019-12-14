@@ -11,7 +11,7 @@ import UIKit
 
 extension UIView {
 
-    func anchorToView(view: UIView) {
+    open func anchorToView(view: UIView) {
         anchorToTop(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
     }
 
@@ -24,7 +24,7 @@ extension UIView {
         0, rightConstant: 0)
     }
 
-    func anchorToCenter(
+    open func anchorToCenter(
             centerX: NSLayoutXAxisAnchor ,
             centerY: NSLayoutYAxisAnchor,
             offsetFromCenter: CGFloat = 0,
@@ -36,7 +36,7 @@ extension UIView {
         centerXAnchor.constraint(equalTo: centerX).isActive = true
     }
 
-    func anchor(
+    open func anchor(
             top: NSLayoutAnchor<NSLayoutYAxisAnchor>? = nil,
             left: NSLayoutAnchor<NSLayoutXAxisAnchor>? = nil,
             bottom: NSLayoutAnchor<NSLayoutYAxisAnchor>? = nil,
@@ -53,7 +53,7 @@ extension UIView {
                 heightConstant: heightConstant, widthConstant: widthConstant)
     }
 
-    func clearConstraints(){
+    open func clearConstraints(){
         var _superview = self.superview
 
         while let superview = _superview {
@@ -75,7 +75,7 @@ extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = true
     }
 
-    func anchorWithConstraints(
+    open func anchorWithConstraints(
             top: NSLayoutAnchor<NSLayoutYAxisAnchor>? = nil,
             left: NSLayoutAnchor<NSLayoutXAxisAnchor>? = nil,
             bottom: NSLayoutAnchor<NSLayoutYAxisAnchor>? = nil,
